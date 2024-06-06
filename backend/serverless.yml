@@ -1,0 +1,12 @@
+service: backend
+
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  stage: dev
+  region: us-east-1 
+resources:
+  Resources:
+    $(file(resources.yml))
